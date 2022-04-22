@@ -26,7 +26,7 @@ module.exports = () => {
         // proxy the Webpack Dev Server endpoint
         // (which should be serving on http://localhost:3100/)
         // through BrowserSync
-        proxy: 'http://reeldeal.local/'
+        proxy: 'https://reeldeal.local/'
       },
       // plugin options
       {

@@ -346,6 +346,33 @@
             "ui_off_text": "Off"
         },
         {
+            "key": "field_6262de75f53ed",
+            "label": "Newsletter Message",
+            "name": "newsletter_message",
+            "type": "textarea",
+            "instructions": "Max Characters 256.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_625735917ac37",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": 256,
+            "rows": 2,
+            "new_lines": "br"
+        },
+        {
             "key": "field_61a03abfd02bf",
             "label": "Newsletter form embed",
             "name": "newsletter_form_embed",
@@ -587,5 +614,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1650484366
+    "modified": 1650646698
 }
