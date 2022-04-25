@@ -96,7 +96,7 @@ function webokstarter_nav()
 		'after'           => '',
 		'link_before'     => '',
 		'link_after'      => '',
-		'items_wrap'      => '<ul class="flex flex-col lg:flex-row w-full h-full lg:items-center lg:justify-end text-white font-medium text-lg lg:text-3xl lg:w-auto space-y-2 lg:space-y-0 lg:space-x-2">%3$s</ul>', // The items_wrap lets us put Tailwind CSS classes on the menu's <ul> element.
+		'items_wrap'      => '<ul class="flex flex-col lg:flex-row relative w-full h-full py-16 lg:py-0 lg:items-center lg:justify-end text-white font-medium text-3xl lg:text-xl xl:text-2xl lg:w-auto space-y-2 lg:space-y-0 lg:space-x-2">%3$s</ul>', // The items_wrap lets us put Tailwind CSS classes on the menu's <ul> element.
 		'depth'           => 0,
         'add_li_class'    => '',
 		'walker'          => false

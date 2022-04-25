@@ -9,6 +9,9 @@ module.exports = {
           black: '#231F20',
         }
       },
+      borderWidth: {
+        '3': '3px',
+      },
       fontFamily: {
         sans: ["Proxima Nova", "sans-serif"],
         title: ["Bebas Neue", "sans-serif"]
@@ -22,6 +25,13 @@ module.exports = {
       },
       transitionDuration: {
         '0': '0ms',
+      },
+      transitionDelay: {
+        '0': '0ms',
+      },
+      transitionProperty: {
+        'height': 'height',
+        'transform-height': 'transform, height',
       },
     },
   },
