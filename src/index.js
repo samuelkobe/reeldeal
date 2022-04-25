@@ -4,3 +4,7 @@ import '/src/styles/main.css';
 
 // Component CSS
 import '/src/styles/components/nav.css';
+import '/src/styles/components/footer.css';
+
+// Plugin Override CSS
+import '/src/styles/plugins/mc4wp.css';

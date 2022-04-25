@@ -10,5 +10,5 @@ body {
 
 /* grouped repeating styles */
 .contained {
-  @apply flex flex-wrap lg:flex-col lg:px-12 2xl:container 2xl:mx-auto;
+  @apply flex flex-wrap lg:flex-col px-6 lg:px-12 2xl:container 2xl:mx-auto;
 }

@@ -16,7 +16,17 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_styles_wp_theme_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../../../../src/styles/wp-theme.css */ \"./src/styles/wp-theme.css\");\n/* harmony import */ var _src_styles_main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../../../../../src/styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var _src_styles_components_nav_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../../../../src/styles/components/nav.css */ \"./src/styles/components/nav.css\");\n// Required CSS\n\n // Component CSS\n\n\n\n//# sourceURL=webpack://tailwind-webpack-starter/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_styles_wp_theme_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../../../../src/styles/wp-theme.css */ \"./src/styles/wp-theme.css\");\n/* harmony import */ var _src_styles_main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../../../../../src/styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var _src_styles_components_nav_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../../../../src/styles/components/nav.css */ \"./src/styles/components/nav.css\");\n/* harmony import */ var _src_styles_components_footer_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../../../../src/styles/components/footer.css */ \"./src/styles/components/footer.css\");\n/* harmony import */ var _src_styles_plugins_mc4wp_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../../../../../../src/styles/plugins/mc4wp.css */ \"./src/styles/plugins/mc4wp.css\");\n// Required CSS\n\n // Component CSS\n\n\n // Plugin Override CSS\n\n\n\n//# sourceURL=webpack://tailwind-webpack-starter/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/styles/components/footer.css":
+/*!******************************************!*\
+  !*** ./src/styles/components/footer.css ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://tailwind-webpack-starter/./src/styles/components/footer.css?");
 
 /***/ }),
 
@@ -37,6 +47,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://tailwind-webpack-starter/./src/styles/main.css?");
+
+/***/ }),
+
+/***/ "./src/styles/plugins/mc4wp.css":
+/*!**************************************!*\
+  !*** ./src/styles/plugins/mc4wp.css ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://tailwind-webpack-starter/./src/styles/plugins/mc4wp.css?");
 
 /***/ }),
 
