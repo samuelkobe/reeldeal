@@ -101,18 +101,24 @@
 
         <?php else : ?>
 
-            <section class="mt-4 xl:mt-16 xl:mb-6">
-                <div class="flex contained">
-                    <h1 class="text-3xl sm:text-4xl xl:text-5xl xl:leading-snug mb-6 lg:mb-16 font-bold font-title text-brand-black lg:text-center"><?php the_title(); ?></h1>
-                </div>
-            </section>
-            
-            <script type="module">
-                const content_header = document.getElementById("app");
-                const header_element = document.getElementById("header");
-                content_header.classList.add('pt-20');
-                content_header.classList.add('lg:pt-32');
-            </script>
+                <section class="mt-4 xl:mt-16 xl:mb-6">
+                    <div class="flex contained">
+                        <h1 class="text-3xl sm:text-4xl xl:text-5xl xl:leading-snug mb-6 lg:mb-16 font-bold font-title text-brand-black lg:text-center"><?php the_title(); ?></h1>
+                    </div>
+                </section>
+                
+                <script type="module">
+                    const app = document.getElementById("app");
+                    const nav_element = document.getElementById("nav");
+                    app.classList.add('pt-20');
+                    app.classList.add('lg:pt-32');
+                    if (nav_element.classList.contains('lg:bg-transparent')) {
+                        nav_element.classList.remove("lg:bg-transparent");
+                        nav_element.classList.add("bg-brand-main");
+                    } else {
+                        // this should not occur.
+                    }
+                </script>
 
         <?php endif; ?>
 

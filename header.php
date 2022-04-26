@@ -30,7 +30,6 @@
 	<?php if ( get_field( 'splash_page_toggle', 'option' ) == 0 ) : ?>
 		<div id="app">
 			<header id="header" :class="[!view.atTopOfPage ? 'h-16' : 'h-16 lg:h-28']" class="w-full flex flex-wrap transition-height duration-200 fixed top-0 z-50" role="banner">
-			<!-- <header id="header" :class="[ menuOpen ? 'h-full lg:h-28' : 'h-28']" class="w-full flex flex-wrap fixed top-0 z-50" role="banner"> -->
 				<?php get_template_part('parts/nav') ?>
 			</header>
 	<?php else: ?>
