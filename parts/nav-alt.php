@@ -1,4 +1,4 @@
-<nav id="nav" :class="[!view.atTopOfPage ? 'bg-brand-main' : 'bg-brand-main lg:bg-transparent']"  class="flex flex-wrap items-start lg:items-center justify-between w-full h-full relative">
+<nav id="nav" class="flex flex-wrap items-start lg:items-center justify-between bg-brand-main w-full h-full relative">
     <div class="flex flex-wrap lg:flex-col lg:px-12 2xl:container 2xl:mx-auto items-center w-full h-full">
         <div class="absolute inset-0 bg-brand-main w-full h-full visible lg:invisible pointer-events-none"></div>
 

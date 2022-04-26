@@ -29,9 +29,24 @@
 
 	<?php if ( get_field( 'splash_page_toggle', 'option' ) == 0 ) : ?>
 		<div id="app">
-			<header id="header" :class="[!view.atTopOfPage ? 'h-16' : 'h-16 lg:h-28']" class="w-full flex flex-wrap transition-height duration-200 fixed top-0 z-50" role="banner">
-				<?php get_template_part('parts/nav') ?>
-			</header>
+			
+
+			<?php if ( have_rows( 'hero' ) ): ?>
+				<?php while ( have_rows( 'hero' ) ) : the_row(); ?>
+
+					<?php if ( get_sub_field( 'page_hero' ) == 1 ) : // this checks to see if the page hero is active. If not use some inline JS to account for header menu spacing.?>
+						<header id="header" :class="[!view.atTopOfPage ? 'h-16' : 'h-16 lg:h-28']" class="w-full flex flex-wrap transition-height duration-200 fixed top-0 z-50" role="banner">
+							<?php get_template_part('parts/nav') ?>
+						</header>
+					<?php else: ?>
+						<header id="header" class="w-full flex flex-wrap transition-height h-16 duration-200 fixed top-0 z-50" role="banner">
+							<?php get_template_part('parts/nav-alt') ?>
+						</header>
+					<?php endif; ?>
+
+				<?php endwhile; ?>
+			<?php endif; ?>
+					
 	<?php else: ?>
 		<div id="app">
 	<?php endif; ?>

@@ -244,6 +244,33 @@
                             "ui_off_text": "Short"
                         },
                         {
+                            "key": "field_60fef19cb9239",
+                            "label": "Hero subtitle",
+                            "name": "hero_subtitle",
+                            "type": "text",
+                            "instructions": "Add a Subtitle. This is above the main title (Max 56 characters).",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_61155ba9511cb",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_60fef155b9238",
                             "label": "Hero title",
                             "name": "hero_title",
@@ -269,33 +296,6 @@
                             "prepend": "",
                             "append": "",
                             "maxlength": 32
-                        },
-                        {
-                            "key": "field_60fef19cb9239",
-                            "label": "Hero content",
-                            "name": "hero_content",
-                            "type": "textarea",
-                            "instructions": "Add a few sentences of content to the hero (Max characters 256).",
-                            "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_61155ba9511cb",
-                                        "operator": "==",
-                                        "value": "1"
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": "50",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "maxlength": 258,
-                            "rows": 4,
-                            "new_lines": "br"
                         },
                         {
                             "key": "field_60fef1fca5b13",
@@ -398,11 +398,6 @@
                 "param": "post_type",
                 "operator": "==",
                 "value": "page"
-            },
-            {
-                "param": "page_template",
-                "operator": "!=",
-                "value": "template-splash.php"
             }
         ]
     ],
@@ -419,6 +414,7 @@
         "revisions",
         "author",
         "format",
+        "featured_image",
         "categories",
         "tags",
         "send-trackbacks"
@@ -426,5 +422,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1650404780
+    "modified": 1650931514
 }
