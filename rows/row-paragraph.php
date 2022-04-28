@@ -1,6 +1,6 @@
 <?php get_template_part('/parts/spacing_alignment_columns') ?>
 
-    <section class="header-combo pt-4 <?php acf_row_y_margin($tm, $bm); ?>">
+    <section class="paragraph-only <?php acf_row_y_margin($tm, $bm); ?>">
         <div class="<?php echo $bg; ?>">
             <div class="mb-4">
                 <div class="container mx-auto px-4 flex justify-center border-red-500 border-x-2">
@@ -11,7 +11,7 @@
                                 <p class="text-base lg:text-lg"><?php the_sub_field( 'content' ); ?></p>
                             <?php endif; ?>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>

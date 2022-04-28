@@ -21,7 +21,7 @@
 
                             <div class="w-full lg:w-2/3 2xl:w-5/12 flex flex-col items-<?php echo $ra; ?> justify-center order-2">
 
-                                <h2 class="text-2xl lg:text-3xl 2xl:text-4xl mb-1 lg:mb-2 font-title tracking-wide"><?php the_sub_field( 'header_content' ); ?></h2>
+                                <h2 class="text-3xl lg:text-4xl 2xl:text-6xl mb-1 lg:mb-2 font-title tracking-wide"><?php the_sub_field( 'header_content' ); ?></h2>
                                 <div class="bg-brand-alt h-1 w-12"></div>
 
                                 <?php if ( have_rows( 'paragraphs' ) ) : ?>

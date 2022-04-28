@@ -23,6 +23,52 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_626b247b6ef65",
+                            "label": "Subtile?",
+                            "name": "subtile_toggle",
+                            "type": "true_false",
+                            "instructions": "Toggle 'On' if you want a Subtitle above the Header.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "On",
+                            "ui_off_text": "Off"
+                        },
+                        {
+                            "key": "field_626b24cb6ef67",
+                            "label": "Subtitle",
+                            "name": "subtitle",
+                            "type": "text",
+                            "instructions": "Add a short subtitle.",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_626b247b6ef65",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "75",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_62588a8b403ed",
                             "label": "Header",
                             "name": "header_content",
@@ -450,5 +496,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1651175867
+    "modified": 1651188966
 }
