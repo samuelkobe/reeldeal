@@ -6,7 +6,6 @@
 
 		<?php get_template_part('parts/hero'); ?>
 
-		<section class="container mx-auto my-8 lg:my-16 px-4">
 			<?php // <section> added inside row loop
 			if (have_rows('rows')):
 				// loop through the rows of data
@@ -17,7 +16,6 @@
 			else :
 				echo '<p class="p-4">No rows created yet. Talk to your web admin.</p>';
 			endif; ?>
-		</section>
 		
 	<?php else: ?>
 				
@@ -39,6 +37,7 @@
 				<?php // Newsletter section ?>
 				<?php if ( get_field( 'newsletter_media_toggle', 'option' ) == 1 ) : ?>
 					<div class="flex flex-col w-full px-4 lg:px-0 items-center justify-center mt-8 lg:mt-12">
+						
 						<h2 class="text-sm lg:text-lg font-bold text-center"><?php the_field( 'newsletter_message', 'option' ); ?></h2>
 						<div class="w-full sm:w-5/6 lg:w-1/2 2xl:w-1/4 lg:mx-auto mt-2">
 							<?php the_field( 'newsletter_form_embed', 'option' ); ?>

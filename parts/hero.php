@@ -8,11 +8,9 @@
             $background_video = get_sub_field( 'background_video' );
             $button = 'button accent mt-4 md:mt-8 mb-2';
             if ( get_sub_field( 'page_hero_height' ) == 1 ) :
-                $hero_height = 'h-[65vh] lg:h-[95vh] min-h-[240px] md:min-h-[480px] xl:min-h-[640px]';
-                $title_styles = 'lg:mt-6 lg:mb-4';
+                $hero_height = 'h-[360px] sm:h-[65vh] lg:h-[90vh] sm:min-h-[360px] md:min-h-[480px] xl:min-h-[640px]';
             else :
                 $hero_height = 'h-[25vh] lg:h-[35vh] min-h-[120px] md:min-h-[240px] xl:min-h-[480px]';
-                $title_styles = 'lg:mt-0 lg:mb-4';
             endif;
             if ( have_rows( 'background_blend_colour' ) ) :
                 while ( have_rows( 'background_blend_colour' ) ) : the_row();
@@ -65,12 +63,12 @@
                     <?php echo $video;?>
                 <?php endif; ?>
 
-                <div class="w-full py-8 md:py-16 lg:mt-0 contained flex-col lg:flex-row items-center justify-start relative z-20 text-white">
+                <div class="w-full py-8 md:py-16 lg:mt-0 flex flex-wrap px-6 lg:px-12 2xl:container 2xl:mx-auto items-center justify-start relative z-20 text-white">
 
-                    <div class="w-full lg:w-2/3 order-2">
+                    <div class="w-full 2xl:w-2/3 md:self-center md:h-1/2">
 
-                        <h1 class="font-black my-4 <?php echo $title_styles;?> text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-none lg:leading-tight xl:leading-snug"><?php the_sub_field( 'hero_title' ); ?></h1>
-                        <p class="font-normal lg:leading-normal text-base lg:text-lg xl:text-xl w-full xl:w-3/4 "><?php the_sub_field( 'hero_content' ); ?></p>
+                        <p class="font-normal lg:leading-normal text-base sm:text-2xl md:text-3xl xl:text-4xl w-full xl:w-3/4 "><?php the_sub_field( 'hero_subtitle' ); ?></p>
+                        <h1 class="font-title text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-none lg:leading-tight xl:leading-snug"><?php the_sub_field( 'hero_title' ); ?></h1>
                         
                         <div class="flex flex-row relative">
                             <?php if ( get_sub_field( 'button_toggle' ) == 1 ) : ?>
@@ -85,34 +83,17 @@
                         </div>
                     </div>
 
-                    <?php if ( get_sub_field( 'icon_toggle' ) == 1 ) : ?>
-                        <div class="flex flex-row relative w-full lg:w-1/3 mb-2 lg:mb-0 order-1 lg:order-3">
-                            <?php $hero_icon = get_sub_field( 'hero_icon' ); ?>
-                            <?php if ( $hero_icon ) : ?>
-                                <img class="w-1/2 mx-auto lg:mx-0 lg:w-full" src="<?php echo esc_url( $hero_icon['url'] ); ?>" alt="<?php echo esc_attr( $hero_icon['alt'] ); ?>" />
-                            <?php endif; ?>
-                        </div>
-                    <?php else : //nothing ?>
-                    <?php endif; ?>
-
                 </div>
             </section>
 
 
         <?php else : ?>
 
-            <section class="mt-4 xl:mt-16 xl:mb-6">
+            <section class="mt-4 xl:mt-16 pt-28 xl:mb-6">
                 <div class="flex contained">
                     <h1 class="text-3xl sm:text-4xl xl:text-5xl xl:leading-snug mb-6 lg:mb-16 font-bold font-title text-brand-black lg:text-center"><?php the_title(); ?></h1>
                 </div>
             </section>
-            
-            <script type="module">
-                const content_header = document.getElementById("app");
-                const header_element = document.getElementById("header");
-                content_header.classList.add('pt-20');
-                content_header.classList.add('lg:pt-32');
-            </script>
 
         <?php endif; ?>
 
