@@ -6,7 +6,6 @@
 
 		<?php get_template_part('parts/hero'); ?>
 
-		<section class="container mx-auto my-8 lg:my-16 px-4">
 			<?php // <section> added inside row loop
 			if (have_rows('rows')):
 				// loop through the rows of data
@@ -17,7 +16,6 @@
 			else :
 				echo '<p class="p-4">No rows created yet. Talk to your web admin.</p>';
 			endif; ?>
-		</section>
 		
 	<?php else: ?>
 				

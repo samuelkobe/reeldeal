@@ -1,7 +1,7 @@
-<div class="flex flex-wrap lg:flex-col lg:px-12 2xl:container 2xl:mx-auto items-center w-full h-full">
+<div class="flex flex-wrap lg:flex-col lg:container lg:mx-auto items-center w-full h-full">
     <div class="absolute inset-0 bg-brand-main w-full h-full visible lg:invisible pointer-events-none"></div>
 
-    <div class="flex h-full items-center w-1/2 lg:w-1/5 ml-4 z-20">
+    <div class="flex h-full items-center w-1/2 lg:w-1/5 ml-4 lg:ml-0 z-20">
         <?php get_template_part('parts/brand') ?>
     </div>
 

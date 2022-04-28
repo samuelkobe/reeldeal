@@ -1,6 +1,6 @@
 		<?php if ( get_field( 'splash_page_toggle', 'option' ) == 0 ) : ?>
 				<!-- footer -->
-			<footer class="footer bg-brand-black text-white mt-16 lg:mt-32" role="contentinfo">
+			<footer class="footer bg-brand-black text-white" role="contentinfo">
 
 
 				<div class="contained">

@@ -30,7 +30,6 @@
 	<?php if ( get_field( 'splash_page_toggle', 'option' ) == 0 ) : ?>
 		<div id="app">
 			
-
 			<?php if ( have_rows( 'hero' ) ): ?>
 				<?php while ( have_rows( 'hero' ) ) : the_row(); ?>
 

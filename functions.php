@@ -227,9 +227,9 @@ function clear_nav_menu_item_id($id, $item, $args) {
 
 function clear_nav_menu_item_class($classes, $item, $args) {
   if (in_array('current-menu-item', $classes) ){
-    return array('active last:lg:pr-4'); //adds classes the active <li> on the menu
+    return array('active'); //adds classes the active <li> on the menu
   } else {
-    return array('last:lg:pr-4'); // adds classes to all the other menu <li>
+    return array(''); // adds classes to all the other menu <li>
   }
 }
 
@@ -257,6 +257,72 @@ function remove_comment_support() {
 function webokstarter_admin_bar_render() {
     global $wp_admin_bar;
     $wp_admin_bar->remove_menu('comments');
+}
+
+/*------------------------------------*\
+	ACF row settings classes
+\*------------------------------------*/
+
+// Y Axis
+// lg:pt-0 lg:pb-0
+// lg:pt-4 lg:pb-4
+// lg:pt-8 lg:pb-8
+// lg:pt-12 lg:pb-12
+// lg:pt-16 lg:pb-16
+// lg:pt-20 lg:pb-20
+// lg:pt-24 lg:pb-24
+// lg:pt-28 lg:pb-28
+
+// X Axis
+// lg:pl-0 lg:pr-0
+// lg:pl-4 lg:pr-4
+// lg:pl-8 lg:pr-8
+// lg:pl-12 lg:pr-12
+// lg:pl-16 lg:pr-16
+// lg:pl-1/12 lg:pr-1/12
+// lg:pl-1/8 lg:pr-1/8
+// lg:pl-1/4 lg:pr-1/4
+
+// Miscellaneous
+// w-full lg:w-5/6 lg:w-3/4 
+// order-1 lg:order-3 lg:ml-1/12 lg:ml-1/24
+// bg-brand-gray
+
+function acf_row_y_margin($top_m, $bottom_m)
+{
+    echo "lg:" . $top_m . " " .  "lg:" . $bottom_m . " ";
+}
+
+function acf_row_x_margin($left_m, $right_m)
+{
+    echo "lg:" . $left_m . " " .  "lg:" . $right_m . " ";
+}
+
+function acf_row_padding($top_p, $bottom_p, $left_p, $right_p)
+{
+    echo  "lg:" . $top_p . " " .  "lg:" . $bottom_p . " " .  "lg:" . $left_p . " " .  "lg:" . $right_p . " ";
+}
+
+function acf_row_alignment($row_a)
+{
+    if ($row_a == 'start' ) {
+        echo 'text-left';
+    } elseif ($row_a == 'center' ) {
+        echo 'mx-auto text-center';
+    } elseif ($row_a == 'end' ) {
+        echo 'text-right';
+    } else {
+        echo 'text-left';
+    }
+}
+
+function acf_bg_colour_check_set_container_spacing($row_bg)
+{
+    if ($row_bg == 'bg-brand-gray') {
+        return 'mt-4 py-8 lg:mt-0 lg:py-0';
+    } else {
+        return 'mt-4 mb-8 lg:my-16';
+    }
 }
 
 /*------------------------------------*\
