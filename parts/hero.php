@@ -10,7 +10,7 @@
             if ( get_sub_field( 'page_hero_height' ) == 1 ) :
                 $hero_height = 'h-[360px] sm:h-[65vh] lg:h-[90vh] sm:min-h-[360px] md:min-h-[480px] xl:min-h-[640px]';
             else :
-                $hero_height = 'h-[25vh] lg:h-[35vh] min-h-[120px] md:min-h-[240px] xl:min-h-[480px]';
+                $hero_height = 'h-[25vh] lg:h-[35vh] 2xl:h-[55vh] min-h-[240px] md:min-h-[360px] xl:min-h-[480px]';
             endif;
             if ( have_rows( 'background_blend_colour' ) ) :
                 while ( have_rows( 'background_blend_colour' ) ) : the_row();
@@ -53,8 +53,15 @@
                         </video>';
         ?>
     
-            <section class="flex relative w-full px-4 xl:px-0 overflow-hidden <?php echo $hero_height . " " . $bg_colour ?>">
-                <div class="absolute left-0 top-0 h-full w-full bg-brand-black z-10 opacity-40 pointer-events-none"></div>
+            <section class="flex relative w-full px-4 2xl:px-0 overflow-hidden <?php echo $hero_height . " " . $bg_colour ?>">
+                <div class="absolute left-0 top-0 h-full w-full bg-brand-black z-10 opacity-50 pointer-events-none"></div>
+                <div class="absolute w-full hidden sm:flex flex-row justify-center bottom-8 lg:bottom-12 h-auto z-30">
+                    <button @click="goto('topOfContent')" class="text-4xl text-white border-2 border-white drop-shadow rounded-full p-3 lg:p-4 motion-safe:animate-[bounce_1s_ease-out_12]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 lg:h-8 w-4 lg:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </button>
+                </div>
                 <?php if ( get_sub_field( 'background_type' ) == 1 ) : ?>
                     <?php if ( $background_image ) : ?>
                         <img class="absolute left-0 w-full h-full object-cover <?php echo $img_vid_blend; ?>" src="<?php echo esc_url( $background_image['url'] ); ?>" alt="<?php echo esc_attr( $background_image['alt'] ); ?>" />
@@ -63,12 +70,12 @@
                     <?php echo $video;?>
                 <?php endif; ?>
 
-                <div class="w-full py-8 md:py-16 lg:mt-0 flex flex-wrap px-6 lg:px-12 2xl:container 2xl:mx-auto items-center justify-start relative z-20 text-white">
+                <div class="w-full py-8 md:py-16 lg:mt-0 flex flex-wrap 2xl:container 2xl:mx-auto items-center justify-start relative z-20 text-white">
 
-                    <div class="w-full 2xl:w-2/3 md:self-center md:h-1/2">
+                    <div class="w-full 2xl:w-2/3 md:self-center md:h-1/2 mt-8">
 
-                        <p class="font-normal lg:leading-normal text-base sm:text-2xl md:text-3xl xl:text-4xl w-full xl:w-3/4 "><?php the_sub_field( 'hero_subtitle' ); ?></p>
-                        <h1 class="font-title text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-none lg:leading-tight xl:leading-snug"><?php the_sub_field( 'hero_title' ); ?></h1>
+                        <h1 class="lg:leading-normal text-xl sm:text-2xl md:text-3xl xl:text-4xl w-full xl:w-3/4 font-light"><?php the_sub_field( 'hero_subtitle' ); ?></h1>
+                        <h2 class="font-title text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-none lg:leading-tight xl:leading-snug tracking-wider lg:tracking-normal"><?php the_sub_field( 'hero_title' ); ?></h2>
                         
                         <div class="flex flex-row relative">
                             <?php if ( get_sub_field( 'button_toggle' ) == 1 ) : ?>

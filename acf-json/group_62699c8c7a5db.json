@@ -85,8 +85,8 @@
                         "id": ""
                     },
                     "choices": {
-                        "main": "Ocean Blue",
-                        "alt": "Ocean Green"
+                        "main": "<span style=\"color:#51606A; font-weight: bold;\">Ocean Grey<\/span>",
+                        "alt": "<span style=\"color:#85B798; font-weight: bold;\">Ocean Green<\/span>"
                     },
                     "allow_null": 0,
                     "other_choice": 0,
@@ -141,5 +141,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651100639
+    "modified": 1651262159
 }

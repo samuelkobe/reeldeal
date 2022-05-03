@@ -7,7 +7,8 @@ module.exports = {
           main: '#51606A',
           alt: '#85B798',
           black: '#231F20',
-          gray: '#F9F9F9',
+          gray: '#F7F7F7',
+          darkgray: '#B9B9B9',
         }
       },
       borderWidth: {
@@ -36,6 +37,7 @@ module.exports = {
         '1/8': '12.5%',
         '1/12': '8.3333%',
         '1/24': '4.1667%',
+        'video': '56.6667%',
       },
       transitionDuration: {
         '0': '0ms',

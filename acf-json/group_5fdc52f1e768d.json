@@ -152,8 +152,8 @@
                             "min_size": "",
                             "max_width": "",
                             "max_height": "",
-                            "max_size": 4,
-                            "mime_types": ".jpg, .png, .webp"
+                            "max_size": 8,
+                            "mime_types": ".jpg, .jpeg, .png, .webp"
                         },
                         {
                             "key": "field_611566ce14dcd",
@@ -422,5 +422,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1650931514
+    "modified": 1651277111
 }

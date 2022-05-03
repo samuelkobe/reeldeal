@@ -5,7 +5,7 @@
     <section class="header-image-combo pt-4 <?php acf_row_y_margin($tm, $bm); ?> <?php acf_row_x_margin($lm, $rm); ?> Helo">
         <div class="<?php echo $bg; ?>">
             <div class="<?php echo $bg_spacing; ?>">
-                <div class="container mx-auto px-4 2xl:px-8 flex justify-center border-red-500 border-x-2">
+                <div class="container mx-auto px-4 2xl:px-8 flex justify-center">
                     <div class=" <?php echo $rc; ?> <?php acf_row_alignment($ra); ?>">
                         
                         <div class="flex flex-col lg:flex-row gap-x-1/12 items-center <?php acf_row_padding($tp, $bp, $lp, $rp); ?> justify-<?php echo $ra; ?>">
@@ -14,14 +14,14 @@
                                 <?php $image = get_sub_field( 'image' ); ?>
                                 <?php if ( $image ) : ?>
                                     <div class="after:content-[''] after:w-full after:h-full after:bg-brand-main after:absolute after:top-6 after:right-6 after:z-0 after:opacity-25 after:hidden after:lg:flex after:rounded-tr-[5rem] after:rounded-bl-[5rem]">
-                                        <img class="w-full h-52 z-1 relative lg:h-auto object-cover lg:object-contain lg:shadow-2xl lg:shadow-brand-black rounded-tr-[2rem] rounded-bl-[2rem] lg:rounded-tr-[5rem] lg:rounded-bl-[5rem]" src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" />
+                                        <img class="w-full h-96 z-1 relative lg:h-auto object-cover lg:object-contain lg:shadow-2xl lg:shadow-brand-black rounded-tr-[2rem] rounded-bl-[2rem] lg:rounded-tr-[5rem] lg:rounded-bl-[5rem]" src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" />
                                     </div>
                                 <?php endif; ?>
                             </div>
 
                             <div class="w-full lg:w-2/3 2xl:w-5/12 flex flex-col items-<?php echo $ra; ?> justify-center order-2">
 
-                                <h2 class="text-2xl lg:text-3xl 2xl:text-4xl mb-1 lg:mb-2 font-title tracking-wide"><?php the_sub_field( 'header_content' ); ?></h2>
+                                <h2 class="text-3xl lg:text-4xl 2xl:text-5xl mb-1 lg:mb-2 font-title tracking-wide"><?php the_sub_field( 'header_content' ); ?></h2>
                                 <div class="bg-brand-alt h-1 w-12"></div>
 
                                 <?php if ( have_rows( 'paragraphs' ) ) : ?>

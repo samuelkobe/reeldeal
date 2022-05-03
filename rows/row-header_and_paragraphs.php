@@ -5,12 +5,16 @@
     <section class="header-combo pt-4 <?php acf_row_y_margin($tm, $bm); ?>">
         <div class="<?php echo $bg; ?>">
             <div class="<?php echo $bg_spacing; ?>">
-                <div class="container mx-auto px-4 flex justify-center border-red-500 border-x-2">
+                <div class="container mx-auto px-4 flex justify-center">
                     <div class="<?php acf_row_x_margin($lm, $rm); ?> <?php echo $rc; ?> <?php acf_row_alignment($ra); ?>">
                 
                         <div class="flex flex-col <?php acf_row_padding($tp, $bp, $lp, $rp); ?> items-<?php echo $ra; ?>">
-                                
-                            <h2 class="text-2xl lg:text-3xl 2xl:text-4xl my-1 lg:my-2 font-title tracking-wide"><?php the_sub_field( 'header_content' ); ?></h2>
+                            
+                            <?php if ( get_sub_field( 'subtile_toggle' ) == 1 ) : ?>
+                                <h3 class="text-lg lg:text-xl 2xl:text-2xl mt-1 lg:mt-2"><?php the_sub_field( 'subtitle' ); ?></h3>
+                            <?php endif; ?>
+
+                            <h2 class="text-3xl lg:text-4xl 2xl:text-5xl my-1 lg:my-2 font-title tracking-wide"><?php the_sub_field( 'header_content' ); ?></h2>
                             <div class="bg-brand-alt h-1 w-12"></div>
                             <?php if ( have_rows( 'paragraphs' ) ) : ?>
                                 <?php while ( have_rows( 'paragraphs' ) ) : the_row(); ?>
