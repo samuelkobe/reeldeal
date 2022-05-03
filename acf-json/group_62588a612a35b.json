@@ -471,6 +471,358 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_626c9b672dc24": {
+                    "key": "layout_626c9b672dc24",
+                    "name": "faq",
+                    "label": "FAQ",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_626c9b6f2dc25",
+                            "label": "FAQs",
+                            "name": "faqs",
+                            "type": "repeater",
+                            "instructions": "Add all FAQs here. Use multiple FAQ components if you want to separate them into categories.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "Add FAQ",
+                            "sub_fields": [
+                                {
+                                    "key": "field_626c9b882dc26",
+                                    "label": "Question",
+                                    "name": "question",
+                                    "type": "textarea",
+                                    "instructions": "FAQ question (Max 150 characters)",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": 150,
+                                    "rows": 2,
+                                    "new_lines": ""
+                                },
+                                {
+                                    "key": "field_626c9bab2dc27",
+                                    "label": "Answer",
+                                    "name": "answer",
+                                    "type": "textarea",
+                                    "instructions": "FAQ Answer (Max 1500 Characters)",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": 1500,
+                                    "rows": 6,
+                                    "new_lines": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_626d95de83c63",
+                            "label": "Row Settings",
+                            "name": "row_settings",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_62682b13b3096"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_626c3bbfafb0b": {
+                    "key": "layout_626c3bbfafb0b",
+                    "name": "table",
+                    "label": "Table (pricing, etc.)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_626c416c198be",
+                            "label": "Table Header",
+                            "name": "table_header",
+                            "type": "text",
+                            "instructions": "Add a short Table Header (Max 48 Characters).",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "75",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": 48
+                        },
+                        {
+                            "key": "field_626c4193198bf",
+                            "label": "Table Colour",
+                            "name": "table_colour",
+                            "type": "radio",
+                            "instructions": "Choose the Table colour.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "main": "<span style=\"color:#51606A; font-weight: bold;\">Ocean Grey<\/span>",
+                                "alt": "<span style=\"color:#85B798; font-weight: bold;\">Ocean Green<\/span>"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_626c3f99cc676",
+                            "label": "Table",
+                            "name": "table",
+                            "type": "table",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "use_header": 1,
+                            "use_caption": 2
+                        },
+                        {
+                            "key": "field_626c40cef9c6c",
+                            "label": "Note",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "No 'Row Settings' for the Table Row as it is specifically styles to be one way on all devices.",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_626c806236c20": {
+                    "key": "layout_626c806236c20",
+                    "name": "video_resources",
+                    "label": "Video Resources",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_626c806a36c21",
+                            "label": "Header",
+                            "name": "video_resources_header",
+                            "type": "text",
+                            "instructions": "Add a short title for the row (Max 32 characters).",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": 32
+                        },
+                        {
+                            "key": "field_626c809836c22",
+                            "label": "Video",
+                            "name": "video",
+                            "type": "repeater",
+                            "instructions": "Add a video title and embed from YouTube here.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 1,
+                            "max": 20,
+                            "layout": "block",
+                            "button_label": "Add Video",
+                            "sub_fields": [
+                                {
+                                    "key": "field_626c81a8213bc",
+                                    "label": "Video Info",
+                                    "name": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_626c80a736c23",
+                                    "label": "Title",
+                                    "name": "title",
+                                    "type": "text",
+                                    "instructions": "Title content here (Max 64 characters).",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": 64
+                                },
+                                {
+                                    "key": "field_626c80bd36c24",
+                                    "label": "Video Embed",
+                                    "name": "video_embed",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "text",
+                                    "media_upload": 0,
+                                    "toolbar": "full",
+                                    "delay": 0
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_626c81f381171",
+                            "label": "Row Settings",
+                            "name": "row_settings",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_62682b13b3096"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_626b35d4d7f57": {
+                    "key": "layout_626b35d4d7f57",
+                    "name": "embed_field",
+                    "label": "Embed Field (Instagram, Contact form, etc.)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_626b35f2d7f58",
+                            "label": "Embed Field",
+                            "name": "embed_field",
+                            "type": "wysiwyg",
+                            "instructions": "Add your WP shortcode here.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "text",
+                            "media_upload": 0,
+                            "toolbar": "full",
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_626b379d5e326",
+                            "label": "Row Settings",
+                            "name": "row_settings",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_62682b13b3096"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Row",
@@ -496,5 +848,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1651188966
+    "modified": 1651353076
 }

@@ -6,6 +6,8 @@
 
 		<?php get_template_part('parts/hero'); ?>
 
+		<span ref="topOfContent" class="h-0 w-0 cursor-none pointer-events-none invisible"></span>
+
 			<?php // <section> added inside row loop
 			if (have_rows('rows')):
 				// loop through the rows of data

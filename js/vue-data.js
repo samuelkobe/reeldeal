@@ -15,6 +15,16 @@ Vue.createApp({
         toggle() {
             this.menuOpen = !this.menuOpen
         },
+        goto(refName) {
+        var element = this.$refs[refName];
+        var top = element.offsetTop;
+
+        window.scrollTo({
+            left: 0,
+            top: top - 64,
+            behavior: 'smooth',
+        });
+        },
         // the function to call when the user scrolls, added as a method
         handleScroll(){
             // when the user scrolls, check the pageYOffset

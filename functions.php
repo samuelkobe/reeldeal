@@ -69,6 +69,9 @@ function footer_scripts()
 {
     wp_register_script('vue-settings', get_template_directory_uri() . '/js/vue-data.js', array(), '1.0.0'); // Custom scripts
     wp_enqueue_script('vue-settings'); // Enqueue
+
+    wp_register_script('faqs-scripts', get_template_directory_uri() . '/js/faqs.js', array(), '1.0.0'); // Custom scripts
+    wp_enqueue_script('faqs-scripts'); // Enqueue
 }
 
 /* ####### Load styles ####### */
@@ -286,7 +289,7 @@ function webokstarter_admin_bar_render() {
 // Miscellaneous
 // w-full lg:w-5/6 lg:w-3/4 
 // order-1 lg:order-3 lg:ml-1/12 lg:ml-1/24
-// bg-brand-gray
+// bg-brand-gray border-brand-alt border-brand-main
 
 function acf_row_y_margin($top_m, $bottom_m)
 {
