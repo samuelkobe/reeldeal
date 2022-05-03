@@ -15,8 +15,19 @@
     </button>
 
     <div :class="[menuOpen ? 'translate-y-0 bg-brand-black lg:bg-transparent h-[100vh] lg:h-full -z-10 lg:z-20 visible' : 'bg-brand-main lg:bg-transparent -translate-y-[100vh] h-full z-20 invisible lg:visible']" 
-    class="flex w-full lg:w-4/5 pointer-events-auto transform transition-transform-height duration-300 lg:duration-0 lg:translate-y-0 lg:transition-none lg:justify-end">
+    class="flex flex-col lg:flex-row w-full lg:w-4/5 pointer-events-auto transform transition-transform-height duration-300 lg:duration-0 lg:translate-y-0 lg:transition-none lg:justify-end">
         <?php webokstarter_nav(); ?>
+
+        <?php if ( get_field( 'header_button_toggle', 'option' ) == 1 ) : ?>
+            <div class="w-full h-[25vh] lg:h-full lg:w-auto flex flex-col lg:flex-row items-center lg:mx-4 mb-20 lg:mb-0">
+                <?php $header_button = get_field( 'header_button', 'option' ); ?>
+                <?php if ( $header_button ) : ?>
+                    <div class="flex flex-row relative">
+                        <a class="button alt" href="<?php echo esc_url( $header_button['url'] ); ?>" target="<?php echo esc_attr( $header_button['target'] ); ?>"><?php echo esc_html( $header_button['title'] ); ?></a>
+                    </div>
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
     </div>
     
 </div>
