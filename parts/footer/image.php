@@ -24,11 +24,3 @@
         <?php endif; ?>
     </div>
 </div>
-
-<div class="w-full md:w-1/4 lg:w-1/6 order-2 lg:order-1 mb-8 lg:mb-0">
-    <h3 class="text-lg lg:text-2xl text-white font-bold mb-4 lg:mb-6">Contact</h4>
-    <div class="w-full flex flex-col text-base xl:text-xl xl:leading-8">
-        <a class="hover:text-brand-alt transition-colors duration-300" href="tel:<?php the_field( 'phone_number', 'option' ); ?>"><?php the_field( 'phone_number_text', 'option' ); ?></a>
-        <a class="hover:text-brand-alt transition-colors duration-300" href="mailto:<?php the_field( 'contact_email', 'option' ); ?>?subject=Inquiry from the <?php bloginfo('name'); ?> website" target="_blank"><?php the_field( 'contact_email_link_text', 'option' ); ?></a>
-    </div>
-</div>
