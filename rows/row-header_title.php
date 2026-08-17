@@ -4,7 +4,7 @@
 
     <section class="header-only <?php acf_row_y_margin($tm, $bm); ?>">
         <div class="<?php echo $bg; ?>">
-            <div class="mt-6 lg:mt-8 mb-4">
+            <div class="object-reveal-250 mt-6 lg:mt-8 mb-4">
                 <div class="container mx-auto px-4 flex justify-center">
                     <div class="<?php acf_row_x_margin($lm, $rm); ?> <?php echo $rc; ?> <?php acf_row_alignment($ra); ?>">
                 

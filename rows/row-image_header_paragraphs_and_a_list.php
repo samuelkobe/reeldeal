@@ -2,7 +2,7 @@
 
 <?php if ( get_row_layout() == 'image_header_paragraphs_and_a_list' ) : ?>
 
-    <section class="header-image-combo pt-4 <?php acf_row_y_margin($tm, $bm); ?> <?php acf_row_x_margin($lm, $rm); ?> Helo">
+    <section class="header-image-combo pt-4 <?php acf_row_y_margin($tm, $bm); ?> <?php acf_row_x_margin($lm, $rm); ?>">
         <div class="<?php echo $bg; ?>">
             <div class="<?php echo $bg_spacing; ?>">
                 <div class="container mx-auto px-4 2xl:px-8 flex justify-center">
@@ -10,7 +10,7 @@
                         
                         <div class="flex flex-col lg:flex-row gap-x-1/12 items-center <?php acf_row_padding($tp, $bp, $lp, $rp); ?> justify-<?php echo $ra; ?>">
                         
-                            <div class="w-full lg:w-1/3 2xl:w-5/12 mb-6 lg:mb-0 relative order-1 <?php echo get_sub_field( 'image_alignment' ); ?>">
+                            <div class="w-full lg:w-1/3 2xl:w-5/12 mb-6 lg:mb-0 relative order-1 object-reveal-250 <?php echo get_sub_field( 'image_alignment' ); ?>">
                                 <?php $image = get_sub_field( 'image' ); ?>
                                 <?php if ( $image ) : ?>
                                     <div class="after:content-[''] after:w-full after:h-full after:bg-brand-main after:absolute after:top-6 after:right-6 after:z-0 after:opacity-25 after:hidden after:lg:flex after:rounded-tr-[5rem] after:rounded-bl-[5rem]">
@@ -19,7 +19,7 @@
                                 <?php endif; ?>
                             </div>
 
-                            <div class="w-full lg:w-2/3 2xl:w-5/12 flex flex-col items-<?php echo $ra; ?> justify-center order-2">
+                            <div class="w-full lg:w-2/3 2xl:w-5/12 flex flex-col items-<?php echo $ra; ?> object-reveal-500 justify-center order-2">
 
                                 <h2 class="text-3xl lg:text-4xl 2xl:text-5xl mb-1 lg:mb-2 font-title tracking-wide"><?php the_sub_field( 'header_content' ); ?></h2>
                                 <div class="bg-brand-alt h-1 w-12"></div>

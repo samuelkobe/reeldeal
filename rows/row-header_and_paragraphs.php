@@ -4,7 +4,7 @@
 
     <section class="header-combo pt-4 <?php acf_row_y_margin($tm, $bm); ?>">
         <div class="<?php echo $bg; ?>">
-            <div class="<?php echo $bg_spacing; ?>">
+            <div class="object-reveal-250 <?php echo $bg_spacing; ?>">
                 <div class="container mx-auto px-4 flex justify-center">
                     <div class="<?php acf_row_x_margin($lm, $rm); ?> <?php echo $rc; ?> <?php acf_row_alignment($ra); ?>">
                 

@@ -1,7 +1,6 @@
 		<?php if ( get_field( 'splash_page_toggle', 'option' ) == 0 ) : ?>
 				<!-- footer -->
-			<footer class="footer bg-brand-black text-white" role="contentinfo">
-
+			<footer class="footer bg-brand-black text-white object-reveal-250" role="contentinfo">
 
 				<div class="contained">
 
@@ -54,7 +53,6 @@
 
 		</div>
 		<!-- /wrapper -->
-
 		<?php wp_footer(); ?>
 
 	</body>

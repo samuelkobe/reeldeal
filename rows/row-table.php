@@ -4,7 +4,7 @@
     <?php $table_colour = get_sub_field( 'table_colour' ); ?>
 
     <section class="theme-table w-full mb-8 lg:mb-16">    
-        <div class="mb-4">
+        <div class="mb-4 object-reveal-250">
             <div class="container mx-auto px-4">
                
                 <div class="w-full h-14 flex items-center justify-start rounded-t bg-brand-<?php echo $table_colour; ?>">

@@ -72,6 +72,9 @@ function footer_scripts()
 
     wp_register_script('faqs-scripts', get_template_directory_uri() . '/js/faqs.js', array(), '1.0.0'); // Custom scripts
     wp_enqueue_script('faqs-scripts'); // Enqueue
+
+    wp_register_script('scroll-scripts', get_template_directory_uri() . '/js/scroll.js', array(), '1.0.0'); // Custom scripts
+    wp_enqueue_script('scroll-scripts'); // Enqueue
 }
 
 /* ####### Load styles ####### */

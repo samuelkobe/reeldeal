@@ -1,8 +1,8 @@
 <?php get_template_part('/parts/spacing_alignment_columns') ?>
 
-    <section class="faq-row pt-4 <?php acf_row_y_margin($tm, $bm); ?> <?php acf_row_x_margin($lm, $rm); ?> Helo">
+    <section class="faq-row pt-4 <?php acf_row_y_margin($tm, $bm); ?> <?php acf_row_x_margin($lm, $rm); ?>">
         <div class="<?php echo $bg; ?>">
-            <div class="<?php echo $bg_spacing; ?>">
+            <div class="object-reveal-250 <?php echo $bg_spacing; ?>">
                 <div class="container mx-auto px-4 2xl:px-8 flex justify-center">
                     <div class=" <?php echo $rc; ?> <?php acf_row_alignment($ra); ?>">
                         
